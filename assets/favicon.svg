@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Car/Info">
+  <rect width="64" height="64" rx="12" fill="#143a2e"/>
+  <path d="M32 6 55 16v16c0 13-9 21-23 26C18 53 9 45 9 32V16Z" fill="#f5eedf"/>
+  <path d="M32 17v30" fill="none" stroke="#e07a1f" stroke-width="5" stroke-dasharray="7 6"/>
+</svg>

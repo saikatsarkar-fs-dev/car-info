@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Car/Info</title>
+  <meta name="description" content="About Car/Info: a college assignment built with semantic HTML and modern CSS. How the data was checked, how the site was built, accessibility notes and full image credits.">
+  <meta name="theme-color" content="#f5eedf" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17150f" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://saikatsarkar-fs-dev.github.io/car-info/about.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..700;1,400..600&amp;family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Car/Info">
+  <meta property="og:title" content="About — Car/Info">
+  <meta property="og:description" content="The brief, the method, the data sources and the full image credits behind Car/Info.">
+  <meta property="og:url" content="https://saikatsarkar-fs-dev.github.io/car-info/about.html">
+  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Suzuki%20Swift%20(2024)%20hybrid%20IMG%208936.jpg?width=1200">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" aria-label="Car/Info home">
+        <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path class="brand__shield" d="M32 6 55 16v16c0 13-9 21-23 26C18 53 9 45 9 32V16Z"/>
+          <path class="brand__road" d="M32 17v30"/>
+        </svg>
+        <span class="brand__name">Car<span class="brand__slash" aria-hidden="true">/</span>Info</span>
+        <span class="brand__tag">Indian highway field guide</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Garage</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="shell">
+        <p class="eyebrow">About · The field notes</p>
+        <hgroup>
+          <h1>A small site with a clear brief.</h1>
+          <p class="page-head__lead">Car/Info is a college assignment about six popular Indian cars, built to show what hand-written HTML and CSS can do without a framework, a build step or a line of JavaScript.</p>
+        </hgroup>
+        <div class="page-head__meta">
+          <span class="route-badge">Project notes</span>
+          <span class="route-badge">Data: Oct 2026</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="brief-title">
+      <div class="shell story-grid">
+        <div>
+          <p class="eyebrow">01 / The brief</p>
+          <h2 id="brief-title">Learning by documenting.</h2>
+          <p class="section-lead">The assignment was simple: build a multi-page car information website using current HTML and CSS standards.</p>
+          <p>The interesting part was the constraint. No JavaScript, no framework and no build step means every interaction has to be earned with HTML and CSS. The filter on the garage page is a set of radio inputs and a <code>:has()</code> selector. The light and dark themes come from the operating system. The comparison table scrolls with the keyboard. Nothing is simulated.</p>
+          <p>The six cars were chosen to cover the market rather than a single niche: a hatchback, a sedan, three SUVs and an off-roader, with prices from under ₹6 lakh to over ₹50 lakh. Specifications are checked against manufacturer pages, with receipts on every car page.</p>
+        </div>
+        <dl class="spec-grid">
+          <div>
+            <dt>HTML pages</dt>
+            <dd>12</dd>
+          </div>
+          <div>
+            <dt>JavaScript</dt>
+            <dd>None</dd>
+          </div>
+          <div>
+            <dt>Stylesheets</dt>
+            <dd>One</dd>
+          </div>
+          <div>
+            <dt>Cars</dt>
+            <dd>Six</dd>
+          </div>
+          <div>
+            <dt>Data checked</dt>
+            <dd>October 2026</dd>
+          </div>
+          <div>
+            <dt>Images</dt>
+            <dd>Six, credited</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section--rule" aria-labelledby="built-title">
+      <div class="shell split split--editorial">
+        <div>
+          <p class="eyebrow">02 / The method</p>
+          <h2 id="built-title">Hand-written, on purpose.</h2>
+          <p class="section-lead">The site uses current platform features, but every page still works if the newest ones are missing.</p>
+          <p>The HTML comes first: landmarks, heading order and real links. The CSS is organised in cascade layers so the reset, design tokens, base styles, layout and components do not fight each other. There is no utility-class soup and no build pipeline to reproduce.</p>
+          <p>The result is a static folder you can open on a laptop, serve from GitHub Pages or archive for a submission. The README explains how to run it and how to add another car.</p>
+        </div>
+        <ol class="principle-list" role="list">
+          <li>
+            <h3>Semantic HTML</h3>
+            <p>Landmarks, one <code>h1</code> per page, <code>hgroup</code> for page heads, <code>search</code> for the filter, <code>figure</code> and <code>figcaption</code> for every photo, <code>details</code> for sources, and tables with captions and scoped headers. Detail pages carry JSON-LD <code>Car</code> data.</p>
+          </li>
+          <li>
+            <h3>CSS with layers</h3>
+            <p>One stylesheet, six cascade layers, custom properties and fluid <code>clamp()</code> spacing. Colours use <code>oklch()</code> with hex fallbacks, <code>light-dark()</code> for system themes and <code>color-mix()</code> for tints. A container query adapts the card meta on very narrow screens.</p>
+          </li>
+          <li>
+            <h3>Progressive enhancement</h3>
+            <p>No JavaScript, no framework, no build step. The CSS filter only appears when <code>:has()</code> is supported; otherwise every car stays visible. Cross-document view transitions are optional. Images have width and height attributes to avoid layout shift.</p>
+          </li>
+          <li>
+            <h3>Accessibility</h3>
+            <p>Skip link, visible focus styles, reduced-motion support, descriptive alt text, labelled landmarks and a keyboard-scrollable table region. Text and background colours are chosen to stay readable in both colour schemes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--rule" aria-labelledby="data-title">
+      <div class="shell story-grid">
+        <div>
+          <p class="eyebrow">03 / The data</p>
+          <h2 id="data-title">How the numbers were checked.</h2>
+          <p>Manufacturer pages were the first stop. Where a manufacturer publishes only a starting price, the top-end figure came from CarWale's October 2026 listing. Tata Motors' official site blocks automated requests, so the Nexon's figures were cross-checked against CarWale and CarDekho.</p>
+          <p>Prices are ex-showroom and vary by city. Specifications vary by variant and model year. Nothing here is a substitute for a test drive, a written quote or the owner's manual. If a number is wrong, send the car, variant and a source; corrections are welcome.</p>
+        </div>
+        <div class="aside-card">
+          <h3>Primary sources</h3>
+          <ul class="link-list" role="list">
+            <li><a href="https://www.marutisuzuki.com/arena/swift">Maruti Suzuki — Swift</a></li>
+            <li><a href="https://www.hyundai.com/in/en/find-a-car/creta/highlights">Hyundai India — Creta</a></li>
+            <li><a href="https://cars.tatamotors.com/nexon/ice.html">Tata Motors — Nexon</a></li>
+            <li><a href="https://www.hondacarindia.com/honda-city">Honda Cars India — City</a></li>
+            <li><a href="https://auto.mahindra.com/suv/thar/specs-and-features.html">Mahindra — Thar</a></li>
+            <li><a href="https://www.toyotabharat.com/showroom/fortuner/index-fortuner.html">Toyota Bharat — Fortuner</a></li>
+          </ul>
+          <p class="table-note">Each car page lists its exact sources, including price aggregators used for cross-checks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--rule" aria-labelledby="access-title">
+      <div class="shell story-grid">
+        <div>
+          <p class="eyebrow">04 / Access</p>
+          <h2 id="access-title">Built to be used.</h2>
+          <p class="section-lead">The site has no JavaScript, so every page works with scripting disabled and every link is a real link.</p>
+          <p>Keyboard focus is visible. The comparison table can be scrolled with the keyboard. Motion is disabled when the operating system asks for reduced motion. Light and dark themes follow the system setting, with contrast checked in both.</p>
+          <p>Every photograph has descriptive alt text, and the decorative SVG icons are hidden from assistive technology. The navigation is a list of ordinary links, not a scripted menu.</p>
+        </div>
+        <div class="stack">
+          <ul class="check-list" role="list">
+            <li>Skip link and semantic landmarks on every page.</li>
+            <li>Visible <code>:focus-visible</code> styling on links, buttons and form controls.</li>
+            <li>Keyboard-scrollable, labelled comparison table region.</li>
+            <li>Reduced-motion support for every animation and transition.</li>
+            <li>Automatic light and dark themes using <code>color-scheme</code> and <code>light-dark()</code>.</li>
+            <li>Descriptive alt text and visible photo credits.</li>
+          </ul>
+          <div class="note">
+            <p><strong>Known limitations.</strong> The CSS body-style filter changes what is visible but does not announce a result count to screen readers. Every car remains in the document and is reachable when the filter is not used. The filter is hidden in browsers without <code>:has()</code> support. External images need an internet connection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--rule" id="credits" aria-labelledby="credits-title">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow">05 / Credits</p>
+          <h2 id="credits-title">Photographs, authors and licences.</h2>
+          <p class="section-lead">All car photographs are hotlinked from Wikimedia Commons and displayed at reduced size. Each is credited in the page caption and again here. No changes were made beyond resizing and CSS cropping.</p>
+        </div>
+
+        <div class="table-scroll" role="region" aria-labelledby="credits-caption" tabindex="0">
+          <table class="data-table">
+            <caption id="credits-caption">Photograph credits for the six cars on Car/Info</caption>
+            <thead>
+              <tr>
+                <th scope="col">Car</th>
+                <th scope="col">Photographer</th>
+                <th scope="col">Licence</th>
+                <th scope="col">Source</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Maruti Suzuki Swift</th>
+                <td>Alexander-93</td>
+                <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:Suzuki_Swift_(2024)_hybrid_IMG_8936.jpg">Wikimedia Commons file</a></td>
+                <td>European-spec hybrid; representative of the Indian generation.</td>
+              </tr>
+              <tr>
+                <th scope="row">Hyundai Creta</th>
+                <td>CARS WORLD Kannada</td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:2024_Hyundai_Creta_1.5_MPi_SX(O)_(India)_front_view.png">Wikimedia Commons file</a></td>
+                <td>Indian-spec 1.5 MPi SX(O).</td>
+              </tr>
+              <tr>
+                <th scope="row">Tata Nexon</th>
+                <td>Dairokkan9</td>
+                <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:2023_Tata_Nexon_XZA%2B_front_view.jpg">Wikimedia Commons file</a></td>
+                <td>Indian-spec XZA+.</td>
+              </tr>
+              <tr>
+                <th scope="row">Honda City</th>
+                <td>Chanokchon</td>
+                <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:2026_Honda_City_e-HEV_RS_(1).jpg">Wikimedia Commons file</a></td>
+                <td>Thai-spec e:HEV RS; Indian trims differ.</td>
+              </tr>
+              <tr>
+                <th scope="row">Mahindra Thar</th>
+                <td>Ank Kumar</td>
+                <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:Mahindra_Thar_SUV_in_%22Red_Rage%22_color_at_Ashiana_Brahmanda,_East_Singbhum_India_(Ank_Kumar,_Infosys_limited)_02.jpg">Wikimedia Commons file</a></td>
+                <td>Indian-spec Thar in Red Rage, Jharkhand.</td>
+              </tr>
+              <tr>
+                <th scope="row">Toyota Fortuner</th>
+                <td>Chanokchon</td>
+                <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></td>
+                <td><a href="https://commons.wikimedia.org/wiki/File:2022_Toyota_Fortuner_2.8_Legender_4WD_60th_Anniversary.jpg">Wikimedia Commons file</a></td>
+                <td>Thai-spec Legender 4WD; Indian trims differ.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">If you reuse a photograph, follow the licence on its source page. The MIT licence on this repository covers the code, not the photographs.</p>
+      </div>
+    </section>
+
+    <section class="section section--rule" aria-labelledby="licence-title">
+      <div class="shell story-grid">
+        <div>
+          <p class="eyebrow">06 / Licence</p>
+          <h2 id="licence-title">Code, content, trademarks.</h2>
+          <p>The code for this site is released under the MIT licence. The written content and design are © 2026 Saikat Sarkar unless otherwise noted. The photographs remain under the Creative Commons licences listed above.</p>
+          <p>Manufacturer names, model names and logos are trademarks of their respective owners. Car/Info is an independent student project and is not affiliated with Maruti Suzuki, Hyundai, Tata Motors, Honda, Mahindra or Toyota.</p>
+        </div>
+        <div class="note">
+          <p><strong>Assignment context.</strong> This site was built for a college assignment to demonstrate semantic HTML, modern CSS and responsible use of external media. It is not commercial buying advice, and it does not collect any visitor data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="corrections-title">
+      <div class="shell cta-band__inner">
+        <div>
+          <p class="eyebrow">Corrections</p>
+          <h2 id="corrections-title">Spotted a wrong number?</h2>
+          <p>Prices and specifications change. If something is out of date, send the car, variant and a source.</p>
+        </div>
+        <a class="button" href="contact.html">Contact Car/Info <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand">Car/Info</p>
+          <p class="footer-intro">Six popular Indian cars, documented like a road trip. Built with hand-written HTML and CSS.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Pages</h2>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">The garage</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Elsewhere</h2>
+          <ul class="footer-links" role="list">
+            <li><a href="https://github.com/saikatsarkar-fs-dev/car-info">GitHub repository</a></li>
+            <li><a href="https://github.com/saikatsarkar-fs-dev">GitHub profile</a></li>
+            <li><a href="https://github.com/saikatsarkar-fs-dev/car-info/issues">Report an issue</a></li>
+            <li><a href="mailto:me.saikatsarkar.dev@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Saikat Sarkar. Code under the MIT licence.</p>
+        <p>Photos: Wikimedia Commons, credited above.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
